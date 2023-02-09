@@ -1,0 +1,32 @@
+@import url("https://use.typekit.net/sdq2efn.css");
+.fit {
+  font-family: "duos-sharp-variable",sans-serif;
+  font-variation-settings: 'wght' 200;
+    font-size: 100px;
+    margin: 0;
+    color: rgb(120, 150, 150);
+    transition: all 1000ms ease-in-out;
+  }
+ .fit:hover{
+    color: rgb(55, 70, 50);
+  font-variation-settings: 'wght' 800;
+  font-size:80px;
+  }
+
+.fit2{
+  font-family: "arsenica-variable",serif;
+  font-variation-settings: 'wght' 179, 'opsz' 1000;
+    font-size: 80px;
+    margin: 0;
+    color: rgb(150, 100, 150);
+    transition: all 1000ms ease-in-out;
+
+}
+
+.fit2:hover {
+  font-family: "arsenica-variable",serif;
+  font-size:100px;
+  color:rgb(120, 200, 200);
+  font-variation-settings: 'wght' 740, 'opsz' 500;
+}
+

@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .letter{
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+  }
+  .block{
+    background: rgb(200, 255, 0);
+  
+  border-radius: 0% 0 0 0;
+  mix-blend-mode: multiply; 
+  filter: drop-shadow(15px 15px rgb(0, 255, 255));
+  }
