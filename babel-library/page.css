@@ -6,6 +6,7 @@
   }
   
   .container {
+    text-align: justify;
     font-size: 0; /*disable white space between inline block element */
   }
   
