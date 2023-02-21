@@ -12,8 +12,29 @@
   }
   .block{
     background: rgb(200, 255, 0);
-  
-  border-radius: 0% 0 0 0;
-  mix-blend-mode: multiply; 
-  filter: drop-shadow(15px 15px rgb(0, 255, 255));
+    border-radius: 30% 0 0 0;
+    mix-blend-mode: multiply; 
+    transform: rotate(10deg);
+    filter: drop-shadow(15px 15px rgb(0, 255, 255));
+    animation: changebg 3s infinite alternate;
+  }
+  .text-shadow{
+    position: fixed;
+    top: 0;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #6F0000;
+    text-shadow: 10px 10px 0px #6F0000;
+  }
+  .block:hover{
+    background-color: aquamarine;
+  }
+  @keyframes changebg{
+    0%{
+      background-color: bisque;
+    }
+    100%{
+      background-color:azure;
+    }
   }
