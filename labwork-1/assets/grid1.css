@@ -1,0 +1,28 @@
+  body{
+    margin: 3vw 3vw;
+    background-color: white;
+  }
+  
+  .design{
+    width: 39vw;
+    height: 33vw;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+
+#container{
+    display: flex;
+    grid-template-columns: 60vw;
+    grid-template-rows: 60vw;
+    justify-content: center;
+}
+
+  .white{
+    background: white;
+  }
+
+  .black{
+    background: black;
+  }
+
