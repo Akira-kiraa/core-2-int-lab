@@ -1,0 +1,62 @@
+main {
+	max-width: 1500px; 
+}
+section {
+	max-width: 1500px; 
+	margin: 100px; 
+	padding: 0 0 0 100px; 
+}
+header h1{
+	font-variant: small-caps;
+	font-size: xx-large;
+}
+body {
+	background: cornsilk; 
+	color: burlywood;
+}
+body a {
+	color: black;
+}
+article h2 {
+	font-family: "times", serif;
+	font-size: large;
+	font-style: normal;
+}
+img {
+	max-width: 50%
+}
+figure {
+	width: 100%; 
+	margin: auto;
+}
+table {
+	font-family: "times", serif;
+	font-size: 400;
+	font-style: normal;
+	text-align: left;
+}
+/* Overrides desktop style when viewport is less than 600px (for smart phones) */
+@media only screen and (max-width: 3000px) {
+	article {
+		margin: 0 0 0 0;
+	}
+	footer img{
+		width: 10%;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	article {
+		margin: 400px 0 0 0;
+	}
+	footer img{
+		width: 25%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	article {
+		margin: 250px 0 0 0;
+	}
+	footer img{
+		width: 30%;
+	}
+}
