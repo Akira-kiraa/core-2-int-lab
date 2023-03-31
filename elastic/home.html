@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>data-collections</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="leftPanel">
+		<ul id="myList"></ul>
+	</div>
+	<div id="rightPanel">
+		<h1 id="title"></h1>
+		<p id="musical"></p>
+		<p id="singer"></p>
+		<p id="language"></p>
+		<p id="version"></p>
+		<p id="lovelevel"></p>
+		<p id="lyrics"></p>
+	</div>
+
+	<script>
+		// Load JSON data from file
+		$.getJSON("mydata.json", function(data) {
+
+			// Loop through each item in the JSON data
+			$.each(data, function(i, item) {
+
+				// Create a new list item for the current item
+				var li = $("<li>")
+					.text(item.number + " " + item.title)
+					.click(function() {
+						// Display the details for the current item
+						$("#title").text(item.title);
+						$("#musical").text(item.musical);
+						$("#singer").text(item.singer);
+						$("#language").text(item.language);
+						$("#version").text(item.version);
+						$("#lovelevel").text(item.lovelevel);
+						$("#lyrics").text(item.lyrics);
+					});
+
+				// Add the list item to the list
+				$("#myList").append(li);
+			});
+
+		});
+	</script>
+</body>
+</html>
