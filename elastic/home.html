@@ -5,13 +5,13 @@
     <title>data-collections</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="main.css">
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="leftPanel">
+	<div id="rightPanel">
 		<ul id="myList"></ul>
 	</div>
-	<div id="rightPanel">
+	<div id="leftPanel">
 		<h1 id="title"></h1>
 		<p id="musical"></p>
 		<p id="singer"></p>
@@ -33,13 +33,13 @@
 					.text(item.number + " " + item.title)
 					.click(function() {
 						// Display the details for the current item
-						$("#title").text(item.title);
-						$("#musical").text(item.musical);
-						$("#singer").text(item.singer);
-						$("#language").text(item.language);
-						$("#version").text(item.version);
-						$("#lovelevel").text(item.lovelevel);
-						$("#lyrics").text(item.lyrics);
+						$("ttitle").text(item.title);
+						$("tmusical").text(item.musical);
+						$("tsinger").text(item.singer);
+						$("tlanguage").text(item.language);
+						$("tversion").text(item.version);
+						$("tlovelevel").text(item.lovelevel);
+						$("tlyrics").text(item.lyrics);
 					});
 
 				// Add the list item to the list
