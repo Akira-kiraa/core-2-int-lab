@@ -25,7 +25,7 @@ data.forEach( function(item, index){
   
   // newItem.style.cssText = `font-size: ${usage}px`;
   newItem.innerHTML = `
-    <span class="nameofcolor">${item.nameofcolor} <br>${item.hexvalue}</span>
+    <span class="nameofcolor">${item.nameofcolor} ${item.hexvalue}</span>
   `;
   container.appendChild(newItem);   
 });
