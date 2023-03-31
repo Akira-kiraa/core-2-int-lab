@@ -6,7 +6,7 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
- @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Oswald:wght@300;500&display=swap');
+ @import url('<link rel="stylesheet" href="https://use.typekit.net/wuu5psm.css">');
 
  /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -57,7 +57,9 @@ a {
 input, textarea {
   margin: 0;
   border: none;
-  font-family: 'Lucida Grande', sans-serif;
+  font-family: "halyard-display", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 100%;
 }
 
@@ -171,25 +173,27 @@ textarea {
     color: #222;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: "Bitter", Arial, sans-serif;
+    font-family: "halyard-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
 
   :root {
-    --bg-color: #CF9730;
+    --bg-color: #c7cfc0;
     --font-color: #222;
-    --title-color: #0067e6;
+    --title-color: #fd8dc8;
     --title-background: #eee;
     --main-border: 1px solid rgba(255, 255, 255, 0.4);
     --main-bg: rgba(255, 255, 255, 0.4);
 
-    --wf-gray: #434E59;
-    --wf-light-gray: #E6ECF2;
-    --wf-bright-yellow: #F2BC1B;
-    --wf-medium-yellow: #CF9730;
-    --wf-medium-brown: #CF9730;
-    --wf-deep-brown: #736048;
-    --body-text-color: var(--wf-medium-brown);
+    --wf-blue: #9fbcc2;
+    --wf-pink: #eedfda;
+    --wf-green-blue: #afc7bf;
+    --wf-green-yellow: #d2d689;
+    --wf-grass-green: #a19e50;
+    --wf-coffee: #d8c9ae;
+    --body-text-color: var(--wf-deep-blue);
 
     /* body font size */
     --text-base-size: 1rem;
@@ -207,7 +211,7 @@ textarea {
 
   [data-theme="dark"] {
     --bg-color: #111;
-    --font-color: #efefef;
+    --font-color: #eee;
     --title-color: #fec150;
     --title-background: #222;
     --main-border: 1px solid rgba(255, 255, 255, 0.2);
@@ -282,7 +286,9 @@ section {
 /* this is code example for typography */
 
 p {
-  font-family: 'Bitter', serif;
+  font-family: "halyard-display", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: var(--text-base-size);
   margin-bottom: 1.5rem;
   line-height: 150%;
@@ -345,60 +351,64 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--text-x6);
   line-height: 110%;
-  font-family: 'Oswald', sans-serif; 
-  font-weight: 500;
+  font-family: "halyard-display", sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 h2 {
   font-size: var(--text-x5);
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
   font-weight: 500;
   line-height: 110%;
 }
 
 h3 {
   font-size: var(--text-x4);
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
+font-style: normal; 
   font-weight: 500;
   line-height: 120%;
 }
 
 h4 {
   font-size: var(--text-x3);
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
+  
   font-weight: 500;
   line-height: 120%;
 }
 
 h5 {
   font-size: var(--text-x2);
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
   font-weight: 500;
   line-height: 120%;
 }
 
 h6 {
   font-size: var(--text-x1);
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
+
   font-weight: 500;
   line-height: 120%;
 }
 
 .core-lab-sans-medium {
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
   font-weight: 500;
   line-height: 100%;
 
 }
 
 .core-lab-sans {
-  font-family: 'Oswald', sans-serif; 
+  font-family: "halyard-display", sans-serif;
   font-weight: 300;
   line-height: 100%;
 }
 
 .core-lab-serif {
-  font-family: 'Bitter', serif;
+  font-family: "halyard-display", sans-serif;
   font-weight: 900;
   line-height: 100%;
 }
@@ -408,27 +418,39 @@ h6 {
 /* colors */
 
 
-.color-gray {
-    background-color: #434E59;
+.color-blue {
+    background-color: #9fbcc2;
   }
 
-    .color-light-gray {
-    background-color: #E6ECF2;
+    .color-pink {
+    background-color: #eedfda;
   }
-    .color-bright-yellow {
-    background-color: #F2BC1B;
+    .color-grass-green {
+    background-color: #a19e50;
   }
-    .color-medium-yellow {
-    background-color: #CF9730;
+    .color-green-blue {
+    background-color: #afc7bf;
   }
-    .color-medium-brown {
-    background-color: #A66312;
+    .color-green-yellow {
+    background-color: #d2d689;
   }
-    .color-deep-brown {
-    background-color: #736048;
+    .color-coffee {
+    background-color: #d8c9ae;
   }
 
 /* theme switcher code */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -503,7 +525,7 @@ h6 {
   }
   
   input:checked + .slider {
-    background-color: #fec150;
+    background-color: #fce300;
   }
   
   input:checked + .slider:before {
@@ -511,7 +533,7 @@ h6 {
   }
   
   .slider svg {
-    color: #222;
+    color: rgb(0, 0, 0);
     position: absolute;
     transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
     pointer-events: none;
@@ -652,7 +674,7 @@ h6 {
   *,
   *::before,
   *::after {
-    background: #fff !important;
+    background: rgb(0, 0, 0) !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
@@ -716,3 +738,4 @@ h6 {
     page-break-after: avoid;
   }
 }
+
