@@ -91,16 +91,19 @@ section{
 h1{
     font-weight: bold;
     font-size: 3rem;
+    color:yellowgreen
 }
 
 h2{
     font-weight: bold;
     font-size: 2rem;
+    color:yellowgreen
 }
 
 h3{
     font-weight:normal;
     font-size: 1.5rem;
+    color:green
 }
 
 h1, h2, h3{
@@ -154,6 +157,7 @@ sup{
     vertical-align: baseline;
     letter-spacing: -1px;
     margin-right: 3px;
+    color:yellowgreen
 }
 .sm{
     font-feature-settings: "c2sc" on;
