@@ -88,22 +88,32 @@ section{
     box-sizing: border-box;
 }
 
-h2{
+h1{
     font-weight: bold;
+    font-size: 3rem;
 }
 
-h1, h2{
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h3{
+    font-weight:normal;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3{
   font-family: 'Quiosco Display';
-  font-size: 2rem;
-  line-height: 1.0;
+  line-height: 1.5;
 }
 p{
-    text-indent: 3rem;
+    text-indent: 2rem;
     line-height: 1.4;
     hyphens: auto;
     font-feature-settings: "onum" on;
 }
-h1 + p, h2 + p{
+h1 + p {
     text-indent: 0;
 }
 h2{
@@ -118,10 +128,14 @@ blockquote{
     text-indent: -0.4em;
 }
 
-ul{
+ol{
     font-size: .85em;
     letter-spacing: 0.015em;
     padding-left: 3rem;
+}
+
+ul li:before{
+    content: "* ";
 }
 
 ul li{
@@ -129,10 +143,8 @@ ul li{
     text-indent: -10px;
     margin-bottom: 1em;
 }
-ul li:before{
-    content: "* ";
-}
-ul li:first-child{
+
+ol li:first-child{
     margin-top: 1em;
 }
 
