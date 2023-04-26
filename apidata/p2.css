@@ -1,0 +1,31 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .button {
+    width: calc(25% - 40px);
+    height: 50px;
+    margin: 15px;
+    background-color: #b08565;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    background-color: burlywood;
+  }
+  
+body a {
+	color: white;
+    text-decoration: none;
+}
+
+body {
+	background: cornsilk; 
+}

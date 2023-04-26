@@ -1,0 +1,12 @@
+#circle {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: green;
+}
+#myCanvas {
+    width: 100%;
+    height: 100%;
+  }  
