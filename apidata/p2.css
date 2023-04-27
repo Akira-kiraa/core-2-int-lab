@@ -3,11 +3,13 @@
     flex-wrap: wrap;
     max-height: 400px;
     overflow-y: auto;
+    justify-content: center;
+    align-items: center;
   }
   
   .button {
     width: calc(25% - 40px);
-    height: 50px;
+    height: 80px;
     margin: 15px;
     background-color: #b08565;
     color: white;

@@ -1,0 +1,39 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text {
+    opacity: 0;
+    animation-name: fade;
+    animation: fade 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  h1 {
+    height: 100%;
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  body {
+	background: cornsilk; 
+}
