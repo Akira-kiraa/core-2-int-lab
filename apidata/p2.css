@@ -1,7 +1,7 @@
 .button-container {
     display: flex;
     flex-wrap: wrap;
-    max-height: 400px;
+    max-height: 800px;
     overflow-y: auto;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
   .button {
     width: calc(25% - 40px);
     height: 80px;
-    margin: 15px;
+    margin: 50px 15px;
     background-color: #b08565;
     color: white;
     border: none;
@@ -29,5 +29,6 @@ body a {
 }
 
 body {
-	background: cornsilk; 
-}
+    background-image: url('beach.jpeg');
+    background-size: cover;
+  }
