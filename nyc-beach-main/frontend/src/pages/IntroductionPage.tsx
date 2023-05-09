@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { fitH, fitV } from "../utils/design";
 
 const introduction_title = `Introduction`;
-const introduction_content = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+const introduction_content = `The water quality sample results collected by the Department of Health and Mental Hygiene at all New York City Beaches. These water quality results are used by the Department to determine the status (open, advisory, closed) of Beaches. This site visualizes only the latest three years of data. Data last updated on October 3, 2022. `;
 export default function IntroductionPage() {
   return (
     <Link to="/selection">
