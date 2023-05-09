@@ -11,10 +11,10 @@ export default function IntroductionPage() {
           className="bg-major flex flex-col text-white text-center items-center font-common pt-2 pb-12 px-20 font-normal"
           style={{ width: fitH(902) }}
         >
-          <div className="mb-1" style={{ fontSize: fitV(60) }}>
+          <div style={{ fontSize: fitV(60), marginBottom: fitV(1) }}>
             {introduction_title}
           </div>
-          <div style={{ fontSize: fitV(24), lineHeight: `${fitV(29)}px` }}>
+          <div style={{ fontSize: fitV(24), lineHeight: `${fitV(29)}` }}>
             {introduction_content}
           </div>
         </div>

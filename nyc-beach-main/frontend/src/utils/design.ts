@@ -1,7 +1,7 @@
 export function fitH(designPx: number) {
-  return (designPx / 1280) * window.innerWidth;
+  return `${(designPx / 1280) * 100}vh`;
 }
 
 export function fitV(designPx: number) {
-  return (designPx / 832) * window.innerHeight;
+  return `${(designPx / 832) * 100}vh`;
 }

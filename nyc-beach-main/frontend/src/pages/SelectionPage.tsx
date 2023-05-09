@@ -11,7 +11,7 @@ export default function SelectionPage() {
         gridTemplateColumns: `repeat(auto-fit, minmax(200px, 1fr))`,
         rowGap: fitV(100),
         columnGap: fitV(75),
-        padding: `${fitV(100)}px ${fitV(75)}px`,
+        padding: `${fitV(100)} ${fitV(75)}`,
       }}
     >
       {getEntries(data).map(([beachName]) => {

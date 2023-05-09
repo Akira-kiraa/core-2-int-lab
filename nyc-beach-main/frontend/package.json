@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "npm run data-build && npx concurrently \"vite\" \"npm run tailwind-dev\"",
-    "tailwind-build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "tailwind-build": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
     "data-build": "cd ../data-gen/ && pnpm i && npm run run && cp data.json ../frontend/src/",
-    "tailwind-dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "tailwind-dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "tsc && npm run tailwind-build && npm run data-build && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

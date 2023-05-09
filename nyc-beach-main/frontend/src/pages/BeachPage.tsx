@@ -7,9 +7,11 @@ import { getEntries } from "../utils/getEntries";
 import { fitV } from "../utils/design";
 import DropDown from "../DropDown";
 
-Chart.defaults.font.size = fitV(28);
+Chart.defaults.font.size = (28 / 832) * window.innerHeight;
 Chart.defaults.font.family = "Inter";
 Chart.defaults.color = "black";
+
+const getBubbleRadius = () => (40 / 832) * window.innerHeight;
 
 const bubbleAlpha = 0.6;
 
@@ -56,13 +58,28 @@ export default function BeachPage() {
         return {
           x: decimalYear,
           y: average,
-          r: fitV(40),
+          r: getBubbleRadius(),
         };
       }
     );
     const chart = new Chart(chartRef.current, {
       type: "bubble",
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        onResize: (chart, { height }) => {
+          console.log('onResize', height);
+          chart.data.datasets.forEach(dataset => {
+            dataset.data.forEach(entry => {
+              if (!entry) return;
+              //@ts-ignore
+              entry.r = getBubbleRadius();
+            })
+          })
+          // chart.up
+          // chart.options.font ??= {};
+          // chart.options.font.size = (28 / 750) * height;
+        },
         aspectRatio: window.innerWidth / window.innerHeight,
         plugins: {
           tooltip: {
@@ -133,13 +150,17 @@ export default function BeachPage() {
     <div className="h-full w-full flex flex-col justify-center items-center">
       <DropDown />
       <div
-        className="bg-major text-white flex items-center justify-center text-center font-common mb-5 select-none cursor-pointer"
-        style={{ padding: fitV(16), fontSize: fitV(24) }}
+        className="bg-major text-white flex items-center justify-center text-center font-common select-none cursor-pointer"
+        style={{
+          padding: fitV(16),
+          fontSize: fitV(24),
+          marginBottom: fitV(16),
+        }}
         onClick={() => navigate(-1)}
       >
         {beachName}
       </div>
-      <div className=" w-[80vw]">
+      <div className="relative w-[80vw] h-[80vh]">
         <canvas id="bubble" ref={chartRef}></canvas>
       </div>
     </div>
