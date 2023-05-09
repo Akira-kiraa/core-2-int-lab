@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { fitH, fitV } from "../utils/design";
 
 const introduction_title = `Introduction`;
-const introduction_content = `The water quality sample results collected by the Department of Health and Mental Hygiene at all New York City Beaches. These water quality results are used by the Department to determine the status (open, advisory, closed) of Beaches. This site visualizes only the latest three years of data. Data last updated on October 3, 2022. `;
+const introduction_content = `The water quality sample results collected by the Department of Health and Mental Hygiene at all New York City Beaches. These water quality results are used by the Department to determine the status (open, advisory, closed) of Beaches. This project visualizes only the latest three years of data. Data last updated on October 3, 2022. `;
 export default function IntroductionPage() {
   return (
     <Link to="/selection">
@@ -14,7 +14,7 @@ export default function IntroductionPage() {
           <div style={{ fontSize: fitV(60), marginBottom: fitV(1) }}>
             {introduction_title}
           </div>
-          <div style={{ fontSize: fitV(24), lineHeight: `${fitV(29)}` }}>
+          <div style={{ fontSize: fitV(24), lineHeight: `${fitV(30)}` }}>
             {introduction_content}
           </div>
         </div>
