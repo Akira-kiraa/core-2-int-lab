@@ -18,7 +18,7 @@ const Router = createBrowserRouter(
     { path: "/selection", Component: SelectionPage },
     { path: "/beaches/:beachName", Component: BeachPage },
   ],
-  { basename: BASE_URL }
+  { basename: REMOTE_DIR }
 );
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

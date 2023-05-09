@@ -5,8 +5,8 @@ import useFont from "./utils/useFont";
 type BackgroundProps = PropsWithChildren<{}>;
 
 function Background({ children }: BackgroundProps) {
-  useFont("Marker Felt", "/MarkerFelt.ttf");
-  useFont("Inter", "/Inter.ttf");
+  useFont("Marker Felt", `${REMOTE_DIR}MarkerFelt.ttf`);
+  useFont("Inter", `${REMOTE_DIR}Inter.ttf`);
   return (
     <>
       <div
