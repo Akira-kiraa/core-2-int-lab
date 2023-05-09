@@ -1,4 +1,3 @@
-// 这里是样本数据，您需要根据您的实际数据来修改
 const data = [
     { enterococciResults: 50, date: '2022-04-01' },
     { enterococciResults: 200, date: '2022-04-02' },
@@ -7,13 +6,10 @@ const data = [
     { enterococciResults: 70, date: '2022-04-05' },
   ];
   
-  // 将数据按照日期从小到大排序
-  data.sort((a, b) => new Date(a.date) - new Date(b.date));
+  //data.sort((a, b) => new Date(a.date) - new Date(b.date));
   
-  // 获取图表容器
   const chart = document.getElementById('chart');
   
-  // 计算每个圆形的位置和颜色
   data.forEach((item, index) => {
     const circle = document.createElement('div');
     circle.className = 'circle';
