@@ -21,7 +21,7 @@ const decimalYearToYearAndMonth: (decimalYear: number) => {
   month: number;
 } = (decimalYear) => {
   const year = Math.floor(decimalYear);
-  const month = Math.round((decimalYear - year) * 12);
+  const month = Math.round((decimalYear - year) * 12) + 1;
   return { year, month };
 };
 
@@ -100,7 +100,6 @@ export default function BeachPage() {
                   Number(tickValue)
                 );
                 return `${year}-${month}`;
-                5;
               },
             },
           },
