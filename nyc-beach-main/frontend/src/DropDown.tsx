@@ -29,7 +29,7 @@ export default function DropDown() {
       {open && (
         <div
           className="absolute h-full w-full top-0 left-0 "
-          onClick={(e) => setOpen(false)}
+          onClick={() => setOpen(false)}
         >
           <div
             className="absolute"

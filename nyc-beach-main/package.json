@@ -1,0 +1,12 @@
+{
+  "name": "nyc-beach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npx pnpm i && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

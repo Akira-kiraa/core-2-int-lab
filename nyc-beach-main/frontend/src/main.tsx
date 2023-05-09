@@ -8,15 +8,18 @@ import IntroductionPage from "./pages/IntroductionPage.tsx";
 import SelectionPage from "./pages/SelectionPage.tsx";
 import BeachPage from "./pages/BeachPage.tsx";
 
-const Router = createBrowserRouter([
-  {
-    path: "/",
-    Component: HomePage,
-  },
-  { path: "/introduction", Component: IntroductionPage },
-  { path: "/selection", Component: SelectionPage },
-  { path: "/beaches/:beachName", Component: BeachPage },
-]);
+const Router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: HomePage,
+    },
+    { path: "/introduction", Component: IntroductionPage },
+    { path: "/selection", Component: SelectionPage },
+    { path: "/beaches/:beachName", Component: BeachPage },
+  ],
+  { basename: BASE_URL }
+);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
