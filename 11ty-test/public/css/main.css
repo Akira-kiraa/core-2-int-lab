@@ -24,6 +24,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  background: cornsilk; 
+	color: burlywood;
 }
 
 ol, ul {
@@ -46,6 +48,7 @@ table {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 input, textarea {
