@@ -68,14 +68,14 @@ export default function BeachPage() {
         responsive: true,
         maintainAspectRatio: false,
         onResize: (chart, { height }) => {
-          console.log('onResize', height);
-          chart.data.datasets.forEach(dataset => {
-            dataset.data.forEach(entry => {
+          console.log("onResize", height);
+          chart.data.datasets.forEach((dataset) => {
+            dataset.data.forEach((entry) => {
               if (!entry) return;
               //@ts-ignore
               entry.r = getBubbleRadius();
-            })
-          })
+            });
+          });
           // chart.up
           // chart.options.font ??= {};
           // chart.options.font.size = (28 / 750) * height;
@@ -103,7 +103,7 @@ export default function BeachPage() {
           y: {
             title: {
               display: true,
-              text: "Average Enterococci Result",
+              text: "Average Enterococci Result (MPN/100 ml)",
             },
           },
           x: {

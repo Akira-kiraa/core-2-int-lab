@@ -1,4 +1,7 @@
-type PickByValue<T, V> = Pick<T, { [K in keyof T]: T[K] extends V ? K : never }[keyof T]>;
+type PickByValue<T, V> = Pick<
+  T,
+  { [K in keyof T]: T[K] extends V ? K : never }[keyof T]
+>;
 
 export type Entries<T> = {
   [K in keyof T]: [keyof PickByValue<T, T[K]>, T[K]];
@@ -6,4 +9,8 @@ export type Entries<T> = {
 
 export function getEntries<T extends {}>(obj: T): Entries<T> {
   return Object.entries(obj) as Entries<T>;
+}
+
+export function getKeys<T extends {}>(obj: T): (keyof T)[] {
+  return Object.keys(obj) as (keyof T)[];
 }

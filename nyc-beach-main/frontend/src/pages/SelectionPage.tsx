@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import data from "../data.json";
-import { getEntries } from "../utils/getEntries";
+import { getKeys } from "../utils/getEntries";
 import { fitV } from "../utils/design";
+import DropDown from "../DropDown";
 
 export default function SelectionPage() {
   return (
@@ -14,19 +15,22 @@ export default function SelectionPage() {
         padding: `${fitV(100)} ${fitV(75)}`,
       }}
     >
-      {getEntries(data).map(([beachName]) => {
-        const beachKey = encodeURIComponent(beachName);
-        return (
-          <Link
-            to={`/beaches/${beachKey}`}
-            key={beachKey}
-            className="bg-major text-white flex items-center justify-center text-center font-common"
-            style={{ padding: fitV(16) }}
-          >
-            {beachName}
-          </Link>
-        );
-      })}
+      {getKeys(data)
+        .sort()
+        .map((beachName) => {
+          const beachKey = encodeURIComponent(beachName);
+          return (
+            <Link
+              to={`/beaches/${beachKey}`}
+              key={beachKey}
+              className="bg-major text-white flex items-center justify-center text-center font-common hover:opacity-70 transition-all duration-200"
+              style={{ padding: fitV(16) }}
+            >
+              {beachName}
+            </Link>
+          );
+        })}
+      <DropDown />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { fitV } from "../utils/design";
+import DropDown from "../DropDown";
 
 export default function HomePage() {
   return (
@@ -12,11 +13,12 @@ export default function HomePage() {
           lineHeight: `${fitV(147)}`,
           color: `#9BD89A`,
           // border: `1px solid #000000`,
-          WebkitTextStroke: `${fitV(2)} #000000`,
+          WebkitTextStroke: `${fitV(1)} #000000`,
         }}
       >
         BEACH<br></br>WATER<br></br>QUALITY<br></br>DATA
       </div>
+      <DropDown />
     </Link>
   );
 }
