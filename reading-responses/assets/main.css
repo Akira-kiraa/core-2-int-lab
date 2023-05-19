@@ -10,19 +10,20 @@
 body {
     font-family: Times, serif;
     text-align: center;
-    font-size: 38px;
+    font-size: 28px;
     line-height: 1.2;
-    background-color: #F6F6F2;
+    background: cornsilk;
 }
 
 /* structure */
 .spacer{
-  height: 100vh;
+  height: 30vh;
   border: 2px solid red;
 }
 
 section{
   height: 50vh;
-  background: yellow;
+  background: burlywood;
   margin: 50px;
+  font-size: 20px;
 }
